@@ -1,0 +1,56 @@
+body{
+	background-color: #000;
+}
+#form{
+	width: 600px;
+	height: 300px;
+	margin: 50px auto;
+	border: 1px solid grey;
+	border-radius: 10px;
+	box-shadow: 5px -10px #555;
+	color: #fff;
+}
+aside{
+  width: 50%;
+  float: right;
+  margin: 2px;
+}
+#signup.active{
+	background-color: #000;
+	color: #fff;
+}
+#top{
+	width: 270px;
+	height: 300px;
+	padding: none;
+	border-radius: 10px 0px 0px 10px;
+}
+#bottom{
+	width:200px;
+	height: 70px;
+	margin: 10px;
+}
+button{
+	background-color: red;
+	color: black;
+	font-family: sans-serif;
+	border: none;
+	padding: 10px;
+}
+footer{
+	border: 2px solid #000;
+	background-color: #f00;
+}
+@media screen and (max-width: 700px){
+	#form{
+		width: 300px;
+		height: 600px;
+		margin: 10px auto;
+		box-shadow: 5px 10px #555;
+	}
+	aside{
+		text-align: center;
+		float: left;
+		width: 100%
+	}
+}

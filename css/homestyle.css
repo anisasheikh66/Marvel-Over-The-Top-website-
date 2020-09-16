@@ -1,0 +1,163 @@
+nav{
+  margin: 0px 0px;
+  height: 3em;
+  padding: 0px;
+  color: #fff;
+  background-color: #006644;
+}
+.mySlides {
+  display: none
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f00;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 700px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* film containers*/
+.title{
+  padding: 2px;
+}
+.image{
+  display: inline-block;
+  margin: 0 auto;
+}
+.image img{
+  margin: 10px;
+  width: 300px;
+  height: 300px; 
+}
+
+@media screen and (max-width:780px){
+    .image img{
+    margin: 2%;
+    width: 40%;
+    height: 300px; 
+  }
+  aside {
+    font-size: 12px;
+  }
+  .wall img{
+    width: 100%;
+    display: block;
+  }
+  .wall aside{
+    float: left;
+  }
+} 
+
+.title a{
+  text-decoration: none;
+  color: #f00;
+  font-weight: bolder;
+}
+.wall aside{
+  font-size: 1.2em;
+  width: 40%;
+  float: right;
+  margin: 2px;
+}
+.wall img{
+  width: 50%;
+  height: auto;
+  max-height: 400px;
+}
+
+aside button{
+  width: 130px;
+  height: 50px;
+  padding: 5px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: bolder;
+  font-size: 0.9em;
+}
+aside button:hover{
+  background-color: #f00;
+  color: #000;
+  border: 1px solid black;
+}

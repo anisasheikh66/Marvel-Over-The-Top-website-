@@ -1,0 +1,10 @@
+@media screen and (max-width :800px){
+	.wall img{
+		width: 100%
+	}
+	.wall aside{
+		font-size: 18px;
+		width: 95%;
+		margin: 2px;
+	}
+}
