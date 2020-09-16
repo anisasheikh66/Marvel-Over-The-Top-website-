@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width intial-scale=1">
+	<title>Marvel Studios</title>
+	<link rel="icon" type="image" href="images/tlogo.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+</head>
+<body>
+	<header>
+		<img src="images/logo.jpg">
+	</header>
+    <div class="topnav">
+	  <a class="active" href="index.html">Home</a>
+	  <a href="movies.html">Movies & Tv Shows</a>
+	  <a href="#">News</a>
+	  <a href="#">Sports</a>
+	  <a href="#">Comics</a>
+	  <a id="signup" href="signup.html">Sign Up</a>
+	</div>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<a href="blackpanther.html"><img src="images/blackpanther2.jpg" style="width:100%; height:400px;"></a>
+			<div class="text">Black Panther</div>
+		</div>
+		<div class="mySlides fade">
+			<a href="sheild.html"><img src="images/sheild.jpg" style="width:100%; height:400px;"></a>
+			<div class="text">Agents of S.H.I.E.L.D</div>
+		</div>
+		<div class="mySlides fade">
+			<a href="endgame.html"><img src="images/endgame.png" style="width:100%; height:400px;"></a>
+			<div class="text">Avengers End Game</div>
+		</div>
+        <div class="mySlides fade">
+        	<a href="cloak.html"><img src="images/cloak.jpg" style="width:100%; height:400px;"></a>
+        	<div class="text">Cloak and Dagger</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	    <br>
+	    <div style="text-align:center">
+	    	<span class="dot" onclick="currentSlide(1)"></span>
+	    	<span class="dot" onclick="currentSlide(2)"></span>
+	    	<span class="dot" onclick="currentSlide(3)"></span>
+	    	<span class="dot" onclick="currentSlide(4)"></span>
+	    </div>
+	</div>
+    <div class="title"><b>Recommended For You </b> <a href="movies.html"> More ></a></div>
+	<div class="image">
+		<img src="images/infinitywar.jpeg">
+		<img src="images/ironman.jpg">
+		<img src="images/civilwar.jpg">
+		<img src="images/darkworld.jpg">
+	</div>
+	<div class="title"><b>Latest Tv Shows </b><a href="movies.html"> More ></a></div>
+	<div class="image">
+		<img src="images/runaways.jpg">
+		<img src="images/ironfist.jpg">
+		<img src="images/inhumans.jpg">
+		<img src="images/sheild.jpg">
+	</div>
+	</div>
+	<footer>
+		<p>© 2020 Marvel. All Rights Reserved. Hulu, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.</p>
+		<p>Contact us : 000-100-0104</p>
+		<p>Marvel India</p>
+	</footer>
+	<script>
+		var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
